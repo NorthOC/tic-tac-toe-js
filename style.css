@@ -1,0 +1,110 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --main-bg: #3d3d3d;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--main-bg);
+    text-align: center;
+    color: white;
+}
+h1, h2{
+    font-family: 'Shantell Sans', cursive;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 50px;
+    color: rgb(255, 246, 127);
+}
+#intro{
+    font-family: 'Shantell Sans', cursive;
+    margin-bottom: 20px;
+}
+#game{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: white;
+    background: cadetblue;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 20px;
+    margin: 5px 10px;
+}
+button:hover{
+    background: rgb(101, 174, 177);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+}
+form button{
+    margin: auto;
+}
+form input{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 25px;
+}
+#grid {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 100px 100px 100px;
+    text-align: center;
+    width: fit-content;
+    background-image: url("./barz.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-width: 300px;
+    min-height: 300px;
+    grid-template-rows: 100px 100px 100px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Shantell Sans', cursive;
+}
+a{
+    text-decoration: none;
+    color: cadetblue;
+}
+a:hover{
+    color: rgb(111, 196, 199);
+}
+.o-symbol{
+    background-image: url("./o_symbol.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.x-symbol{
+    background-image: url("./x_symbol.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#reset{
+    background-color: rgb(145, 95, 160);
+}
+#reset:hover{
+    background-color: rgb(166, 97, 187);
+}
